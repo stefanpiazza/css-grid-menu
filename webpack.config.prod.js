@@ -74,7 +74,7 @@ module.exports = {
             filename: 'static/styles/[name].css'
         }),
         new HtmlWebpackPlugin({
-            chunks: [],
+            chunks: ['common', 'app'],
             filename: 'index.html',
             template: 'src/index.html',
             title: 'CSS Grid Menu'
